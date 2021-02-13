@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="CustomerApp.Detail"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="421" d:DesignWidth="531" x:Name="detailControl">
+    <Grid DataContext="{Binding ElementName=detailControl, Path=DataContext}">
+        <Grid Name="grid1" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Label Content="Customer Id:" Grid.Column="0" Grid.Row="0"  Margin="3" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Grid.Row="0"   Margin="3" Name="customerIdTextBox" Text="{Binding Path=CustomerId, Mode=TwoWay, ValidatesOnExceptions=true, NotifyOnValidationError=true}" VerticalAlignment="Center"  />
+            <Label Content="Company Name:" Grid.Column="0" Grid.Row="1"  Margin="3" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Grid.Row="1"   Margin="3" Name="companyNameTextBox" Text="{Binding Path=CompanyName, Mode=TwoWay, ValidatesOnExceptions=true, NotifyOnValidationError=true}" VerticalAlignment="Center"  />
+            <Label Content="Contact Name:" Grid.Column="0" Grid.Row="2"  Margin="3" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Grid.Row="2"   Margin="3" Name="contactNameTextBox" Text="{Binding Path=ContactName, Mode=TwoWay, ValidatesOnExceptions=true, NotifyOnValidationError=true}" VerticalAlignment="Center"  />
+            <Label Content="Contact Title:" Grid.Column="0" Grid.Row="3"  Margin="3" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Grid.Row="3"   Margin="3" Name="contactTitleTextBox" Text="{Binding Path=ContactTitle, Mode=TwoWay, ValidatesOnExceptions=true, NotifyOnValidationError=true}" VerticalAlignment="Center"  />
+            <Label Content="Address:" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left" Margin="3" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Grid.Row="4" Margin="3" Name="addressTextBox" Text="{Binding Path=Address, Mode=TwoWay, ValidatesOnExceptions=true, NotifyOnValidationError=true}" VerticalAlignment="Center" />
+            <Label Content="City:" Grid.Column="0" Grid.Row="5"  Margin="3" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Grid.Row="5"   Margin="3" Name="cityTextBox" Text="{Binding Path=City, Mode=TwoWay, ValidatesOnExceptions=true, NotifyOnValidationError=true}" VerticalAlignment="Center"  />
+            <Label Content="Postal Code:" Grid.Column="0" Grid.Row="6"  Margin="3" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Grid.Row="6"   Margin="3" Name="postalCodeTextBox" Text="{Binding Path=PostalCode, Mode=TwoWay, ValidatesOnExceptions=true, NotifyOnValidationError=true}" VerticalAlignment="Center"  />
+            <Label Content="Region:" Grid.Column="0" Grid.Row="7"  Margin="3" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Grid.Row="7"   Margin="3" Name="regionTextBox" Text="{Binding Path=Region, Mode=TwoWay, ValidatesOnExceptions=true, NotifyOnValidationError=true}" VerticalAlignment="Center"  />
+            <Label Content="Country:" Grid.Column="0" Grid.Row="8"  Margin="3" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Grid.Row="8"   Margin="3" Name="countryTextBox" Text="{Binding Path=Country, Mode=TwoWay, ValidatesOnExceptions=true, NotifyOnValidationError=true}" VerticalAlignment="Center"  />
+            <Label Content="Phone:" Grid.Column="0" Grid.Row="9"  Margin="3" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Grid.Row="9"   Margin="3" Name="phoneTextBox" Text="{Binding Path=Phone, Mode=TwoWay, ValidatesOnExceptions=true, NotifyOnValidationError=true}" VerticalAlignment="Center"  />
+            <Label Content="Fax:" Grid.Column="0" Grid.Row="10"  Margin="3" VerticalAlignment="Center" />
+            <TextBox Grid.Column="1" Grid.Row="10"   Margin="3" Name="faxTextBox" Text="{Binding Path=Fax, Mode=TwoWay, ValidatesOnExceptions=true, NotifyOnValidationError=true}" VerticalAlignment="Center"  />
+        </Grid>
+    </Grid>
+</UserControl>
